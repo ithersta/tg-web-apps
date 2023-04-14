@@ -43,7 +43,7 @@
 <main>
     <Input bind:inputValue/>
     {#if noneOption !== null}
-        <button class="m-2 w-full text-text" on:click={showConfirmNone}>{noneOption}</button>
+        <button class="m-2 w-auto text-text" on:click={showConfirmNone}>{noneOption}</button>
     {/if}
     {#each filteredOptions as option}
         <p class="mx-2 px-2 py-3 w-auto text-text justify-start rounded-md"
